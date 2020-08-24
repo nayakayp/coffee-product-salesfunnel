@@ -1,0 +1,201 @@
+:root {
+  --poppin-regular: 400;
+  --poppin-medium: 500;
+  --poppin-bold: 700;
+  --main-color: #d68935;
+  --second-color: #393939;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Merriweather", serif;
+}
+
+h1 {
+  font-size: 5.4rem;
+}
+
+h2 {
+  font-size: 3.8rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+  color: #393939;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+.btn {
+  text-transform: uppercase;
+  border: none;
+  background: none;
+  width: 250px;
+  height: 70px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+}
+
+.btn.second {
+  background: var(--second-color);
+}
+
+.btn.main {
+  background: var(--main-color);
+}
+
+.btn.second:hover {
+  background: #616161;
+}
+
+.btn.main:hover {
+  background: #ed9435;
+}
+
+.hero {
+  padding: 2rem 0;
+  background: url("../img/hero-background.png"), #ebd6ae;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .container {
+  width: 902px;
+  height: 587px;
+  margin: 0 auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4b0b0d), color-stop(18.75%, #5b1f07), color-stop(77.08%, #6f3203), to(#7b3e00));
+  background: linear-gradient(180deg, #4b0b0d 0%, #5b1f07 18.75%, #6f3203 77.08%, #7b3e00 100%);
+  background-blend-mode: multiply;
+  border-radius: 10px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .container .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .container .heading h2 {
+  font-size: 4.8rem;
+}
+
+.hero .container .heading p {
+  font-size: 1.8rem;
+}
+
+.hero .container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5rem;
+}
+
+.hero .container .content .content-offer .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero .container .content .content-offer .title {
+  margin: 2rem 0 3rem 0;
+  font-size: 2.4rem;
+  font-weight: var(--poppin-bold);
+}
+
+@media only screen and (max-width: 860px) {
+  .hero .container img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 9rem;
+            flex: 1 1 9rem;
+  }
+  .hero .container .hero-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 2 10rem;
+            flex: 1 2 10rem;
+  }
+  .hero .container .hero-content h1 {
+    text-align: center;
+    font-size: 3.4rem;
+  }
+  .hero .container .hero-content p {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=offer.css.map */
